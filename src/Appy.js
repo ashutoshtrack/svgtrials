@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import svgPanZoom from "svg-pan-zoom";
 class App extends Component {
-  componentDidMount() {
+  /* componentDidMount() {
     const panZoomInstance = svgPanZoom("#svg-id", {
       zoomEnabled: true,
       controlIconsEnabled: true,
@@ -27,7 +27,7 @@ class App extends Component {
     });
     // Zoom out
     panZoomInstance.zoom(0.2); */
-  }
+  //} */
 
   render() {
     return (

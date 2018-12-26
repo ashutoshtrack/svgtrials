@@ -2,7 +2,22 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import svgPanZoom from "svg-pan-zoom";
+import SvgComponent from "./SvgComponent";
 class App extends Component {
+  /*  componentDidMount() {
+    const panZoomInstance = svgPanZoom("Layer_8", {
+      zoomEnabled: true,
+      controlIconsEnabled: true,
+      fit: true,
+      center: true,
+      minZoom: 0.1
+    });
+
+    panZoomInstance.zoom(0.2);
+  } */
+  // Zoom out
+  // panZoomInstance.zoom(0.2);
+
   /*   componentDidMount() {
     const panZoomInstance = svgPanZoom("#svg-id", {
       zoomEnabled: true,
@@ -32,7 +47,31 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        Svg trials
+        <SvgComponent />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/* 
+
+          <svg width="5000" height="110">
+            <rect
+              width="5000"
+              height="100"
+              style={{
+                fill: "rgb(255,0,255)",
+                strokeWidth: 3,
+                stroke: "rgb(0,0,0)"
+              }}
+              // style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"
+            />
+          </svg>
+*/
+
+/*    Svg trials
         <svg width="4000" height="110">
           <rect
             x="10"
@@ -61,26 +100,4 @@ class App extends Component {
             ry="15"
             style={{ stroke: "#006600", fill: "#00cc00" }}
           />
-        </svg>
-      </div>
-    );
-  }
-}
-
-export default App;
-
-/* 
-
-          <svg width="5000" height="110">
-            <rect
-              width="5000"
-              height="100"
-              style={{
-                fill: "rgb(255,0,255)",
-                strokeWidth: 3,
-                stroke: "rgb(0,0,0)"
-              }}
-              // style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)"
-            />
-          </svg>
-*/
+        </svg> */
